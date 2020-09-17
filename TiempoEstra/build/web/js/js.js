@@ -1,21 +1,38 @@
-$('section.awSlider .carousel').carousel({
-	pause: "hover",
-  interval: 2000
-});
-
-var startImage = $('section.awSlider .item.active > img').attr('src');
-$('section.awSlider').append('<img src="' + startImage + '">');
-
-$('section.awSlider .carousel').on('slid.bs.carousel', function () {
- var bscn = $(this).find('.item.active > img').attr('src');
-	$('section.awSlider > img').attr('src',bscn);
-});
-
+function apertura() {
+    var apertura = document.getElementById("TApertura");
+    var anual = document.getElementById("TAnual");
+    var descenso = document.getElementById("TDescenso");
+    if (apertura.style.display === "none") {
+        apertura.style.display = "block";
+        anual.style.display = "none";
+        descenso.style.display = "none";
+    }
+}
+function anual() {
+    var apertura = document.getElementById("TApertura");
+    var anual = document.getElementById("TAnual");
+    var descenso = document.getElementById("TDescenso");
+    if (anual.style.display === "none") {
+        anual.style.display = "block";
+        apertura.style.display = "none";
+        descenso.style.display = "none";
+    }
+}
+function descenso() {
+    var apertura = document.getElementById("TApertura");
+    var anual = document.getElementById("TAnual");
+    var descenso = document.getElementById("TDescenso");
+    if (descenso.style.display === "none") {
+        descenso.style.display = "block";
+        anual.style.display = "none";
+        apertura.style.display = "none";
+    }
+}
 
 /* 
-Philips ambilight tv
-Üzerine gleince duruyor slide
-*/
+ Philips ambilight tv
+ Üzerine gleince duruyor slide
+ */
 
 /* 
  * To change this license header, choose License Headers in Project Properties.
