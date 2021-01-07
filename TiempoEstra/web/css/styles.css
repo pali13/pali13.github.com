@@ -21,6 +21,10 @@
     background-image: linear-gradient(black, #26fc00, #179600, #0f5e01, black);
     color:white; 
     text-align:left;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
 }
 
 .containerHeader {
